@@ -10,8 +10,7 @@ export default function getHomeContent(content) {
   header.textContent = "Welcome to Misir's";
 
   body.classList.add("home-body");
-  body.textContent = `
-Where exceptional flavors meet timeless hospitality.
+  body.textContent = `Where exceptional flavors meet timeless hospitality.
 
 Every dish is prepared with carefully selected ingredients,
 bringing together traditional recipes and modern culinary artistry.
@@ -25,8 +24,7 @@ We look forward to serving you.
   hoursHeader.textContent = "Opening Hours";
 
   hoursBody.classList.add("home-hours");
-  hoursBody.textContent = `
-Monday - Thursday    11:00 AM - 10:00 PM
+  hoursBody.textContent = `Monday - Thursday    11:00 AM - 10:00 PM
 Friday               11:00 AM - 11:00 PM
 Saturday             10:00 AM - 11:00 PM
 Sunday               10:00 AM - 09:00 PM
@@ -36,13 +34,14 @@ Sunday               10:00 AM - 09:00 PM
   locationHeader.textContent = "Location";
 
   locationBody.classList.add("home-location");
-  locationBody.textContent = `
-Feldbergweg 1, 63069 Offenbach am Main, Germany`;
+  locationBody.textContent = `123 Main Street New York, NY 10001`;
 
-  content.appendChild(header);
-  content.appendChild(body);
-  content.appendChild(hoursHeader);
-  content.appendChild(hoursBody);
-  content.appendChild(locationHeader);
-  content.appendChild(locationBody);
+  content.append(
+    header,
+    body,
+    hoursHeader,
+    hoursBody,
+    locationHeader,
+    locationBody,
+  );
 }
